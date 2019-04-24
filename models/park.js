@@ -73,11 +73,9 @@ Park.prototype.dietNumbers = function() {
   for (dinosaur of this.dinosaurs) {
     if (dinosaur.diet === 'carnivore') {
       diets.carnivore += 1;
-    };
-    if (dinosaur.diet === 'herbivore') {
+    } else if (dinosaur.diet === 'herbivore') {
       diets.herbivore += 1;
-    };
-    if (dinosaur.diet === 'omnivore') {
+    } else {
       diets.omnivore += 1;
     };
   };
